@@ -7,7 +7,9 @@ public class Rhombus extends Parallelogram implements Figure{
 
     @Override
     public double getArea() {
-    return (sideA * sideA) * Math.sin(angle);
+        double angleInRadians = Math.toRadians(angle);
+        return sideA * sideA * Math.sin(angleInRadians);
+
     }
 
     @Override

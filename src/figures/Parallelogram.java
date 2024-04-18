@@ -9,7 +9,8 @@ public class Parallelogram extends AParallelogram implements Figure {
 
     @Override
     public double getArea() {
-        return sideA * sideB * Math.sin(angle);
+        double angleInRadians = Math.toRadians(angle);
+        return sideA * sideB * Math.sin(angleInRadians);
     }
 
     @Override
